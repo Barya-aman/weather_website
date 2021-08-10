@@ -12,7 +12,7 @@ const forecast=(latitude,longitude,callback)=>
             callback('unable to find location',undefined);
         }else{
     
-            callback(undefined,response.body.current.weather_descriptions[0]+". it is currently " + response.body.current.temperature + " C and it feels like " +response.body.current.feelslike+" C");
+            callback(undefined,response.body.current.weather_descriptions[0]+". it is currently " + response.body.current.temperature + " C and it feels like " +response.body.current.feelslike+" C and the humidity is "+response.body.current.humidity);
         }
      })
 }
