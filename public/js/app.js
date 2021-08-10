@@ -1,8 +1,5 @@
 // const { response } = require("express");
 
-// console.log('client side javascript file is loaded!');
-
-
 
 
 const weatherForm=document.querySelector('form');
